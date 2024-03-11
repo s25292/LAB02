@@ -4,9 +4,18 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
-        Console.WriteLine("Modyfikacja 1");
-        Console.WriteLine("Modyfikacja 2");
-        Console.WriteLine("Modyfikacja 3");
+        int[] tab = { 1, 2, 3, 4, 5 };
+        Console.WriteLine(Avg(tab));
+    }
+
+    static int Avg(int[] tab)
+    {
+        int sum = 0;
+        for (int i = 0; i < tab.Length; i++)
+        {
+            sum += tab[i];
+        }
+
+        return sum / tab.Length;
     }
 }
