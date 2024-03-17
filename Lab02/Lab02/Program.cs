@@ -12,9 +12,9 @@ class Program
     static int Avg(int[] tab)
     {
         int sum = 0;
-        for (int i = 0; i < tab.Length; i++)
+        for (int j = 0; j < tab.Length; j++)
         {
-            sum += tab[i];
+            sum += tab[j];
         }
         
         return sum / tab.Length;
